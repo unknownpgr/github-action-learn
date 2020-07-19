@@ -23,9 +23,9 @@ jobs:
 
       - name: multilineTest
         run: |
-          cd ../,
-          mkdir myDir,
-          cd myDir,
-          echo "This is test file" > test.txt,
-          pwd,
+          cd ../;
+          mkdir myDir;
+          cd myDir;
+          echo "This is test file" > test.txt;
+          pwd;
           cat test.txt
