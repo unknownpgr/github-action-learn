@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - use: actions/checkout@v2
+
       - name: printText
         run: echo "Hello CI!"
 
