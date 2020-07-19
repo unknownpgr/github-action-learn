@@ -6,8 +6,6 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-
     steps:
       - name: printText
         run: echo "Hello CI!"
@@ -17,3 +15,6 @@ jobs:
 
       - name: ll
         run: ls -al
+
+      - name: cat
+        run: cat README.md
