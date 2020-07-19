@@ -11,20 +11,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: printText
-        run: echo "Hello CI!"
-
-      - name: osTest
-        run: pwd
-
-      - name: ll
-        run: ls -al
-
-      - name: cat
-        run: cat README.md
-
-      - name: dumb
-        run: echo $MY_SECRET > test.txt
-
-      - name: show
-        run: cat test.txt
+      - name: nodeTest
+        run: node test.js $MY_SECRET
