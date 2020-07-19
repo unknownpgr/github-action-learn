@@ -1,0 +1,15 @@
+name: MyCustomCI
+
+on:
+  push: branches:[master]
+
+jobs:
+  build:
+    runs-os:ubuntu-latest
+
+    steps:
+    - name: printText
+      run: echo "Hello CI!"
+
+    - name : osTest
+      run : pwd
