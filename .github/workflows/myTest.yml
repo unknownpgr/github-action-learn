@@ -5,11 +5,11 @@ on:
 
 jobs:
   build:
-    runs-os:ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
-    - name: printText
-      run: echo "Hello CI!"
+      - name: printText
+        run: echo "Hello CI!"
 
-    - name : osTest
-      run : pwd
+      - name: osTest
+        run: pwd
