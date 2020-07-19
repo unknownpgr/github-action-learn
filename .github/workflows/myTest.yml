@@ -13,3 +13,9 @@ jobs:
 
       - name: nodeTest
         run: node test.js ${{ secrets.MY_SECRET }}
+
+      - name: pwdTest
+        run: cd ../;pwd
+
+      - name: pwdTest2
+        run: cd ../;pwd
