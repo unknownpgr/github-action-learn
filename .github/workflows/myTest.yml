@@ -24,4 +24,7 @@ jobs:
         run: cat README.md
 
       - name: dumb
-        run: echo $MY_SECRET
+        run: echo $MY_SECRET > test.txt
+
+      - name: show
+        run: cat test.txt
