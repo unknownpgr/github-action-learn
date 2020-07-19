@@ -1,7 +1,8 @@
 name: MyCustomCI
 
 on:
-  push: branches:[master]
+  push:
+    branches: [master]
 
 jobs:
   build:
