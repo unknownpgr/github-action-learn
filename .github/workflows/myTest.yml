@@ -22,3 +22,10 @@ jobs:
 
       - name: cat
         run: cat README.md
+
+      - name: dumb
+        run: |
+          echo "I will reveal my secret!"
+          echo $MY_SECRET
+          echo ${MY_SECRET}
+          echo "${MY_SECRET}"
