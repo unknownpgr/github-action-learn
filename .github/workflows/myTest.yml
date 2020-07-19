@@ -13,3 +13,4 @@ jobs:
 
       - name: nodeTest
         run: node test.js "${MY_SECRET}"
+        # Some annotation
