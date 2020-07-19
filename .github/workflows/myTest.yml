@@ -17,5 +17,15 @@ jobs:
       - name: pwdTest
         run: cd ../;pwd
 
+      # 테스트해본 바, 두 테스트의 결과가 같았다. 그러므로 한 스텝 단위로 실행된다.
       - name: pwdTest2
         run: cd ../;pwd
+
+      - name: multilineTest
+        run: |
+          cd ../,
+          mkdir myDir,
+          cd myDir,
+          echo "This is test file" > test.txt,
+          pwd,
+          cat test.txt
