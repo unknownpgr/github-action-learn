@@ -42,4 +42,5 @@ jobs:
 
       - name: pwdOverride
         run: ls -al
-        env: PWD=../
+        env:
+          PWD: ../
