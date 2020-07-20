@@ -35,7 +35,11 @@ jobs:
         run: |
           echo "My name is ${MY_NAME}";
           echo "My email is ${MY_EMAIL}";
-          echo "My secret is ${ secrets.MY_SECRET }"
+          echo "My secret is ${ {secrets.MY_SECRET} }"
         env:
           MY_NAME: name
           MY_EMAIL: me@email.com
+
+      - name: pwdOverride
+        run: ls -al
+        env: PWD=../
