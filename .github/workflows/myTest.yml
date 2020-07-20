@@ -21,6 +21,7 @@ jobs:
       - name: pwdTest2
         run: cd ../;pwd
 
+      # 여러 줄로 출력할 때에는 이렇게 해야 한다.
       - name: multilineTest
         run: |
           cd ../;
