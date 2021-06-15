@@ -11,6 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - uses: unknownpgr/github-action-learn
+        with:
+          who-to-greet: 'Unknownpgr'
+
       - name: nodeTest
         run: node test.js ${{ secrets.MY_SECRET }}
 
