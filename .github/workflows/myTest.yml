@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: unknownpgr/github-action-learn
+      - uses: unknownpgr/github-action-learn@v1.0
         with:
           who-to-greet: 'Unknownpgr'
 
